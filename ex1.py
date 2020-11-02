@@ -1,39 +1,43 @@
-# 1. Are the following if statements True or False:
-if True and False:
-  print('it is false')
-else:
-  print('we are in else')
+# 2. What values should x,y have so the following if statements are True? What about False?
 
+x = 7
+a = x > 6 and x < 12
+print(a)
 
-if False or True:
-  print('this will always be true')
-else:
-  print('will not be reached')
+x = 13
+a = x > 6 and x < 12
+print(a)
 
+y = 11
+b = x > 10 or y > 10
+print(b)
 
-x = 10 >= 10 and 67 > 66
-print('ex 3 = ')
-print(x)
+x = 9
+y = 10
+b = x > 10 or y > 10
+print(b)
 
-d = 10 < 10 and 10 >= 9
+x = 10
+c = x < 9 or True
+print(c)
+
+y = 100
+d = y > 99 and False
 print(d)
 
-
-e = -1 < -2 or -2 > -1
+x = 11
+e = x > 10 and x < 10
 print(e)
 
-
-f = True or False and True
+x = False
+f = not x
 print(f)
 
-g = True and False or False and True
+x = 10
+g = x > 10 or x < 10
 print(g)
 
-h = not True and not False
+x = 15
+y = 90
+h = x > 12 and x < 18 or y > 4 and not y < 89
 print(h)
-
-i = not True or True
-print(i)
-
-j = False and not False
-print(j)
