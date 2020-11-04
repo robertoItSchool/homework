@@ -1,42 +1,12 @@
-# 3. Exercises with lists
-list1 = [1, 3, 45, -7, 89, 3, 1, 12, 3, 3, 1, 3]
-list2 = ["a", "cd", "b", "b", "f", "oj", "Zz"]
-list3 = [1, 2, "a", 34, "bgh", "#"]
+# 3. Generate the first 30 numbers of the Fibonacci sequence. The Fibonacci sequence is a series of numbers where a number is the addition of the last two numbers. First 2 numbers are 0 and 1, after that list[x] = list[x-1] + list[x-2]
+# The result should be this: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181
 
-# a. eliminate all elements from list3
-# list3.clear()
+x = input('How many numbers? ')
 
-# b. eliminate all 3s from list1
-print(list1)
-while 3 in list1:
-  list1.remove(3)
-print(list1)
+list = [0, 1]
+while len(list) < int(x):
+  new = list[len(list) - 1] + list[len(list) - 2]
+  list.append(new)
 
-# c. sort list1 from the biggest number to the lowest
-list1.sort(reverse=True)
-print(list1)
+print(list)
 
-# d. sort list2 without "Zz"
-print(list2)
-list2.pop()
-list2.sort()
-print(list2)
-
-# e. make list3 in the reverse order
-print(list3)
-list3.reverse()
-print(list3)
-
-# f. eliminate last 3 elements from list 2, last element from list3 and last 2 elements from list1
-i = 3
-print(list2)
-# while i > 0:
-#   list2.pop()
-#   i -= 1
-# print(list2)
-
-list2 = list2[:-2]
-print(list2)
-
-# g. how many "b" values are in list2
-print(list2.count('b'))
