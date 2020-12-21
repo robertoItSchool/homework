@@ -1,11 +1,14 @@
 # Let's create an architecture for an IT company
-# We have sale persons. They have a first_name, last_name, number_of_sales, sales_talent (from 1 to 10)
-# We have product owners. They have a first_name, last_name, managed teams, managing_talent (from 1 to 10)
+
+# We have sale persons. They have a first_name, last_name, number_of_sales, sales_skill (from 1 to 10)
+# We have product owners. They have a first_name, last_name, managed_teams, managing_skill (from 1 to 10)
+
 # We have devs. They have a first_name, last_name, years_of_experience, backend_skill(1-10), frontend_skill(1-10),
 #                           devops_skill(1-10), system_knowledge(1-10), testing_skill(1-10), designer_skill(1-10),
 #                           teams
 # Junior devs 0-2 years of experience, 3-5 mid level, 6+ senior level
 # A junior backend dev has backend_skill > 5, mid > 7, senior > 9. The same for the rest of the skills.
+
 # Frontend dev => frontend_skill, Devops => devops_skill, SystemEngineer => system_knowledge, QA => testing skill,
 # UX => designer_skill, FullStack (only seniors) => frontend + backend + system
 # A dev can have multiple roles if he has enough skill, examples: backend + devops, UX + frontend
