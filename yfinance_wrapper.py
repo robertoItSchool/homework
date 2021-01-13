@@ -1,10 +1,6 @@
 import yfinance
 
 
-# microsoft = yfinance.Ticker('MSFT')
-#
-# print(microsoft.info)
-
 class YahooFinanceStock:
   # the constructor
   def __init__(self, name):
