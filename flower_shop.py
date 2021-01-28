@@ -7,7 +7,6 @@
 import abc
 import json
 
-
 class Flower(abc.ABC):
   @abc.abstractmethod
   def __init__(self, colour, smell, petals, type):
@@ -89,7 +88,7 @@ class FlowerShop:
 
 
 shop = FlowerShop()
-print(shop.get_inventory())
+# print(shop.get_inventory())
 # shop.add_to_inventory([Tulip('red', 6), Orchid('white', 3), Orchid('white', 4)])
 # order = shop.place_order([Tulip('red', 6), Orchid('white', 3), Orchid('white', 4)])
 
